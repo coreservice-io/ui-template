@@ -9,9 +9,9 @@
                         <feather-icon size="32" icon="DollarSignIcon" />
                     </b-media-aside>
                     <b-media-body>
-                        <h6>Earnings<b-badge class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">
+                        <h5>Earnings<b-badge class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">
                                 About </b-badge>
-                        </h6>
+                        </h5>
                         <small>$134514.4</small>
                     </b-media-body>
 
@@ -24,8 +24,8 @@
                         <feather-icon size="32" icon="ThumbsUpIcon" />
                     </b-media-aside>
                     <b-media-body>
-                        <h6>Thumbs<b-badge class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
-                        </h6>
+                        <h5>Thumbs<b-badge class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
+                        </h5>
                         <small> 14134</small>
                     </b-media-body>
 
@@ -38,8 +38,8 @@
                         <feather-icon size="32" icon="EyeIcon" />
                     </b-media-aside>
                     <b-media-body>
-                        <h6>Views <b-badge class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
-                        </h6>
+                        <h5>Views <b-badge class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
+                        </h5>
                         <small>9831</small>
                     </b-media-body>
                 </b-media>
@@ -51,8 +51,8 @@
                         <feather-icon size="32" icon="HeartIcon" />
                     </b-media-aside>
                     <b-media-body>
-                        <h6>Likes <b-badge class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
-                        </h6>
+                        <h5>Likes <b-badge class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
+                        </h5>
                         <small>5143413</small>
                     </b-media-body>
                 </b-media>
@@ -69,8 +69,8 @@
                     </b-media-aside>
 
                     <b-media-body>
-                        <h6>Credit<b-badge variant="primary" class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
-                        </h6>
+                        <h5>Credit<b-badge variant="primary" class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
+                        </h5>
                         <small>$134514.141114 </small>
                     </b-media-body>
 
@@ -83,8 +83,8 @@
                         <feather-icon size="32" icon="MailIcon" />
                     </b-media-aside>
                     <b-media-body>
-                        <h6>Credit<b-badge variant="success" class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
-                        </h6>
+                        <h5>Credit<b-badge variant="success" class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
+                        </h5>
                         <small>$134514.1411 </small>
                     </b-media-body>
 
@@ -97,8 +97,8 @@
                         <feather-icon size="32" icon="MailIcon" />
                     </b-media-aside>
                     <b-media-body>
-                        <h6>Credit<b-badge variant="warning" class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
-                        </h6>
+                        <h5>Credit<b-badge variant="warning" class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
+                        </h5>
                         <small>$134514.14114</small>
                     </b-media-body>
 
@@ -111,8 +111,8 @@
                         <feather-icon size="32" icon="MailIcon" />
                     </b-media-aside>
                     <b-media-body>
-                        <h6>Credit<b-badge variant="danger" class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
-                        </h6>
+                        <h5>Credit<b-badge variant="danger" class="float-right" v-b-tooltip.hover.left="'credit detail description here xxx xxxx xxxx xxxxx xxx xxxx xxxxxxx xxxxxxxx xxxxxxx'">About</b-badge>
+                        </h5>
                         <small>$134514.14</small>
                     </b-media-body>
 

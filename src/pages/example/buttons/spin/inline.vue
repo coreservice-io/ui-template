@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-6">
+  <div class="col-md-6 mt-3">
     <b-card header="Inline style">
       <div class="p-3">
         <p class="mb-0">inline spinbutton with  <code>inline</code>  attribute </p>

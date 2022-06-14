@@ -1,5 +1,5 @@
 <template>
-<div class="col-12">
+<div class="col-12 mb-5">
     <h5 class="mb-3 mt-5">#Custom</h5>
         <b-list-group>
             <b-list-group-item active>

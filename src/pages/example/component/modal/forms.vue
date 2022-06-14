@@ -1,5 +1,5 @@
 <template>
-<div class="col-12">
+<div class="col-12 mb-5">
     <b-card header="Forms">
         <div class="p-3">
             <b-button  class="mr-3 "  v-b-modal.modal-login variant="primary">
