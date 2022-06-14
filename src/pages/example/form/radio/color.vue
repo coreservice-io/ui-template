@@ -39,12 +39,14 @@
 import {
     BFormRadio,
     BRow,
+    BCardText
 } from "bootstrap-vue";
 
 export default {
     components: {
         BFormRadio,
         BRow,
+        BCardText
     },
     data() {
         return {
