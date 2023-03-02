@@ -42,9 +42,10 @@ async function getCaptcha() {
   return await request.Get(url);
 }
 
-async function getEmailVCode(email, captchaId, captcha) {
+async function getEmailVCode(email, captchaId, captcha, vcodeLen) {
   let url = config.api.endpoint + "/api/user/email_vcode";
   return await request.Post(url, {
+    vcode_len: vcodeLen,
     email: email,
     captcha_id: captchaId,
     captcha: captcha,
