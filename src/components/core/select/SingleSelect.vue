@@ -3,7 +3,7 @@ import { ref, watch, computed, toRef } from "vue";
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/vue/20/solid";
 
-const props = defineProps(["options", "modelValue"]);
+const props = defineProps(["options", "modelValue","placeHolder"]);
 
 const all_options = [null];
 
@@ -56,7 +56,7 @@ let SelectedItem = computed(() => {
         </template>
         <template v-else>
           <span class="list-header-empty">
-            <span class="truncate">select</span>
+            <span class="truncate">{{ props.placeHolder }}</span>
           </span>
         </template>
         <span class="list-header-suffix">
