@@ -181,7 +181,7 @@ input.err {
         @apply bg-gray-50;
         @apply border-gray-300;
         @apply bg-gray-50;
-        @apply text-gray-700;
+        @apply text-gray-500;
         @apply px-4;
         @apply whitespace-nowrap;
         @apply inline-flex;
@@ -189,7 +189,7 @@ input.err {
         @apply mb-0;
 
         span {
-            @apply text-gray-700;
+            @apply text-gray-500;
         }
 
         svg {

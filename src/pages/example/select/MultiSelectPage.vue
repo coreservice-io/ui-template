@@ -97,7 +97,7 @@ async function loadOptions({ action /*, callback*/ }) {
           <p>value:{{ value }}</p>
         </div>
         <div class="lg:col-span-2 mt-2">
-          <treeselect v-model="value" :multiple="true" :options="options" :disable-branch-nodes="true" />
+          <treeselect v-model="value" :multiple="true" :options="options" :disable-branch-nodes="true" class="rounded" />
         </div>
       </div>
 
@@ -107,7 +107,7 @@ async function loadOptions({ action /*, callback*/ }) {
           <p>value:{{ complex_value }}</p>
         </div>
         <div class="lg:col-span-2 mt-2">
-          <treeselect :searchable="false" :disable-branch-nodes="true" :show-count="true" :default-expand-level="1" v-model="complex_value" :multiple="false" :options="options" />
+          <treeselect :searchable="false" :disable-branch-nodes="true" :show-count="true" :default-expand-level="1" v-model="complex_value" :multiple="false" :options="options" class="rounded" />
         </div>
       </div>
 
@@ -117,7 +117,7 @@ async function loadOptions({ action /*, callback*/ }) {
           <p>value:{{ value2 }}</p>
         </div>
         <div class="lg:col-span-2 mt-2">
-          <treeselect v-model="value2" :multiple="true" :options="options2" />
+          <treeselect v-model="value2" :multiple="true" :options="options2" class="rounded-r"/>
         </div>
       </div>
 
@@ -126,7 +126,7 @@ async function loadOptions({ action /*, callback*/ }) {
           <label for="username" class="flex"> Multi disabled select </label>
         </div>
         <div class="lg:col-span-2 mt-2">
-          <treeselect :multiple="true" :disabled="true" />
+          <treeselect :multiple="true" :disabled="true" class="rounded-l" />
         </div>
       </div>
 
@@ -135,7 +135,7 @@ async function loadOptions({ action /*, callback*/ }) {
           <label for="username" class="flex"> Multi remote loading select </label>
         </div>
         <div class="lg:col-span-2 mt-2">
-          <treeselect :load-options="loadOptions" :options="remote_options" :auto-load-root-options="false" :multiple="true" placeholder="Open the menu..." />
+          <treeselect :load-options="loadOptions" :options="remote_options" :auto-load-root-options="false" :multiple="true" placeholder="Open the menu..."  class="rounded-t"/>
         </div>
       </div>
     </div>
