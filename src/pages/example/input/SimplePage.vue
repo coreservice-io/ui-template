@@ -175,7 +175,7 @@ import SidebarLayout from "../../../layouts/sidebar/SidebarLayout.vue";
 
       <div class="pt-5 lg:grid lg:grid-cols-3 lg:gap-4">
         <div>
-          <label for="username" class="flex">Input with let tab</label>
+          <label for="username" class="flex">Input with left tab</label>
           <p>input with left tab</p>
         </div>
 
@@ -184,6 +184,22 @@ import SidebarLayout from "../../../layouts/sidebar/SidebarLayout.vue";
             <div class="tab -mr-px">Some text:</div>
             <div class="input-wrap">
               <input type="email" name="email" id="email" placeholder="your@email" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-5 lg:grid lg:grid-cols-3 lg:gap-4">
+        <div>
+          <label for="username" class="flex">Input with left tab (disabled)</label>
+          <p>input with left tab (disabled)</p>
+        </div>
+
+        <div class="lg:col-span-2 mt-2">
+          <div class="btn-input-wrap">
+            <div class="tab -mr-px">Some text:</div>
+            <div class="input-wrap">
+              <input type="email" name="email" disabled class="disabled" id="email" placeholder="your@email" />
             </div>
           </div>
         </div>

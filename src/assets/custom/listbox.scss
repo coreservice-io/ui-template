@@ -176,6 +176,12 @@
     }
 }
 
+.list-box.rounded{
+    .list-box-btn {
+        @apply rounded-md;
+    }
+}
+
 
 .input-wrap.sm{
     .list-box{

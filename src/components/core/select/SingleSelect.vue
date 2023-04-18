@@ -43,7 +43,7 @@ let SelectedItem = computed(() => {
 </script>
 
 <template>
-  <Listbox as="div" class="list-box" v-model="selected">
+  <Listbox as="div" class="list-box w-full" v-model="selected">
     <div class="relative">
       <ListboxButton class="list-box-btn w-full py-2 pl-3 pr-10">
         <template v-if="SelectedItem != null">
