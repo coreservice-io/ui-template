@@ -42,7 +42,7 @@ const selected = ref(null); //if no selected item yet
           <p>{{ selected ? selected : "not selected" }}</p>
         </div>
         <div class="lg:col-span-2 mt-2">
-          <SimpleSelect :options="options" v-model="selected"></SimpleSelect>
+          <SimpleSelect :options="options" v-model="selected" class="rounded"></SimpleSelect>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { ref, watch, computed, toRef } from "vue";
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/vue/20/solid";
 
-const props = defineProps(["options", "modelValue","placeHolder"]);
+const props = defineProps(["options", "modelValue","placeHolder","class"]);
 
 const all_options = [null];
 
@@ -45,7 +45,7 @@ let SelectedItem = computed(() => {
 <template>
   <Listbox as="div" class="list-box w-full" v-model="selected">
     <div class="relative">
-      <ListboxButton class="list-box-btn w-full py-2 pl-3 pr-10">
+      <ListboxButton   :class="'list-box-btn w-full py-2 pl-3 pr-10 '+ props.class" >
         <template v-if="SelectedItem != null">
           <span class="list-header">
             <span v-if="(typeof SelectedItem.active != 'undefined')" :class="[SelectedItem.active ? 'active' : 'inactive', 'status']" ></span>
