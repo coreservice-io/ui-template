@@ -57,6 +57,22 @@ let multi_sel_tag_value = ref(['Jack']);
 
             <div class="pt-5 lg:grid lg:grid-cols-3 lg:gap-4">
                 <div>
+                    <label for="username" class="flex">Single select (normal size) </label>
+                    <p>{{ multi_sel_tag_value }}</p>
+                </div>
+
+                <div class="lg:col-span-2 mt-1 input-wrap ">
+                    <Multiselect v-model="multi_sel_tag_value" :options="multi_sel_tag_options" mode="tags" />
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="space-y-8 divide-y divide-gray-200 divide-gray-200">
+
+            <div class="pt-5 lg:grid lg:grid-cols-3 lg:gap-4">
+                <div>
                     <label for="username" class="flex">Single select (small size) </label>
                     <p>{{ multi_sel_value }}</p>
                 </div>
@@ -69,20 +85,7 @@ let multi_sel_tag_value = ref(['Jack']);
         </div>
 
 
-        <div class="space-y-8 divide-y divide-gray-200 divide-gray-200">
 
-            <div class="pt-5 lg:grid lg:grid-cols-3 lg:gap-4">
-                <div>
-                    <label for="username" class="flex">Single select (large size) </label>
-                    <p>{{ multi_sel_tag_value }}</p>
-                </div>
-
-                <div class="lg:col-span-2 mt-1 input-wrap sm">
-                    <Multiselect v-model="multi_sel_tag_value"  :options="multi_sel_tag_options" mode="tags" />
-                </div>
-
-            </div>
-        </div>
 
 
     </SidebarLayout>
