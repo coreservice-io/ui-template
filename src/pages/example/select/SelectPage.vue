@@ -29,6 +29,29 @@ const multi_sel_tag_options = [
 ]
 let multi_sel_tag_value = ref(['Jack']);
 
+//
+const multi_sel_group_options = [
+    {
+        label: 'DC',
+        options: ['Batman', 'Robin', 'Joker'],
+    },
+    {
+        label: 'Marvel',
+        options: ['Spiderman', 'Iron Man', 'Captain America'],
+    },
+];
+
+let multi_sel_group_value = ref([]);
+
+
+//
+
+async function load_remote_options(query) {
+    await new Promise(r => setTimeout(r, 2000));
+    return [{ value: 'v1', label: 'l1' }, { value: 'v2', label: 'l2' }];
+}
+
+let remote_option_sel_val = ref(null);
 
 </script>
 
@@ -85,6 +108,38 @@ let multi_sel_tag_value = ref(['Jack']);
         </div>
 
 
+        <div class="space-y-8 divide-y divide-gray-200 divide-gray-200">
+
+            <div class="pt-5 lg:grid lg:grid-cols-3 lg:gap-4">
+                <div>
+                    <label for="username" class="flex">Multi select group options</label>
+                    <p>{{ multi_sel_group_value }}</p>
+                </div>
+
+                <div class="lg:col-span-2 mt-1 input-wrap sm">
+                    <Multiselect v-model="multi_sel_group_value" :options="multi_sel_group_options" :groups="true"
+                        mode="multiple" />
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="space-y-8 divide-y divide-gray-200 divide-gray-200">
+
+            <div class="pt-5 lg:grid lg:grid-cols-3 lg:gap-4">
+                <div>
+                    <label for="username" class="flex">Multi select remote options</label>
+                    <p>{{ remote_option_sel_val }}</p>
+                </div>
+
+                <div class="lg:col-span-2 mt-1 input-wrap sm">
+                    <Multiselect v-model="remote_option_sel_val" :options="load_remote_options" mode="tags" />
+                </div>
+
+            </div>
+        </div>
 
 
 

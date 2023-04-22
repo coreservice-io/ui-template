@@ -51,6 +51,7 @@
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+
 .multiselect-tag {
     @apply bg-indigo-600;
     font-size: 0.7rem;
@@ -72,7 +73,9 @@
     opacity: 0.6;
 }
 
-.multiselect-option.is-selected {
+.multiselect-option.is-selected,
+.multiselect-group-label.is-selected,
+.multiselect-group-label.is-selected.is-pointed {
     @apply bg-indigo-600;
     &.is-pointed{
         @apply bg-indigo-600;
