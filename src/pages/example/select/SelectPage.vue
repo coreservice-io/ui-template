@@ -66,7 +66,7 @@ let remote_option_sel_val = ref(null);
             <div class="pt-5 lg:grid lg:grid-cols-3 lg:gap-4">
                 <div>
                     <label for="username" class="flex">Single select (normal size) </label>
-                    <p>{{ value ? value : "not selected" }}</p>
+                    <p>{{ single_sel_value ? single_sel_value : "not selected" }}</p>
                 </div>
 
                 <div class="lg:col-span-2 mt-1">
