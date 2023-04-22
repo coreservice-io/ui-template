@@ -116,7 +116,7 @@ let remote_option_sel_val = ref(null);
                     <p>{{ multi_sel_group_value }}</p>
                 </div>
 
-                <div class="lg:col-span-2 mt-1 input-wrap sm">
+                <div class="lg:col-span-2 mt-1">
                     <Multiselect v-model="multi_sel_group_value" :options="multi_sel_group_options" :groups="true"
                         mode="multiple" />
                 </div>
@@ -134,14 +134,12 @@ let remote_option_sel_val = ref(null);
                     <p>{{ remote_option_sel_val }}</p>
                 </div>
 
-                <div class="lg:col-span-2 mt-1 input-wrap sm">
+                <div class="lg:col-span-2 mt-1">
                     <Multiselect v-model="remote_option_sel_val" :options="load_remote_options" mode="tags" />
                 </div>
 
             </div>
         </div>
-
-
 
     </SidebarLayout>
 </template>
