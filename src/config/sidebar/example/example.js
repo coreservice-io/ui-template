@@ -40,6 +40,7 @@ let example = [
           { name: "radio", href: "/example/input/radio" },
           { name: "date_time", href: "/example/input/datetime" },
           { name: "switch", href: "/example/input/switch" },
+          { name: "tag", href: "/example/input/tag" },
         ],
       },
       {

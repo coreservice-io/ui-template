@@ -43,6 +43,10 @@ export default [
     path: "/example/input/switch",
     component: () => import("../../pages/example/input/SwitchPage.vue"),
   },
+  {
+    path: "/example/input/tag",
+    component: () => import("../../pages/example/input/InputTagPage.vue"),
+  },
   //button
   {
     path: "/example/button/main",
