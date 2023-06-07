@@ -179,7 +179,7 @@ let { tableMgr, currentRow,
     create_w_open, create_w_loader_open } = NewTableMgr(t_config, colums, table_callback);
 
 //inital loading
-tableMgr.loadItems();
+tableMgr.resetAndLoad();
 
 </script>
 
@@ -204,7 +204,7 @@ tableMgr.loadItems();
                             <PlusCircleIcon class="prefix-icon" />Create
                         </button>
 
-                        <button type="button" @click="tableMgr.loadItems" class="btn-secondary sm mr-3">
+                        <button type="button" @click="tableMgr.resetAndLoad" class="btn-secondary sm mr-3">
                             <ArrowPathIcon class="prefix-icon" />Refresh
                         </button>
                     </template>

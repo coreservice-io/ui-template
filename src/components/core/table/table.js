@@ -22,7 +22,7 @@ function NewTableMgr(config, colums, table_callback) {
   table_mgr.config.per_page = 10;
   table_mgr.config.sort = [];
   table_mgr.config.perPageDropdown = [10, 20, 50, 100];
-  table_mgr.config.select_enable=true;
+  table_mgr.config.select_enable = true;
 
   if (!config) {
     console.log("err:config required")
@@ -166,15 +166,15 @@ function NewTableMgr(config, colums, table_callback) {
   ///////////////////
   table_mgr.isLoading = ref(false);
 
-  table_mgr.showTableLoader=function(){
-    table_mgr.isLoading.value=true
+  table_mgr.showTableLoader = function () {
+    table_mgr.isLoading.value = true
   }
 
-  table_mgr.hideTableLoader=function(){
-    table_mgr.isLoading.value=false
+  table_mgr.hideTableLoader = function () {
+    table_mgr.isLoading.value = false
   }
-  
-  
+
+
 
   table_mgr.update_w_open = ref(false);
   table_mgr.update_w_loader_open = ref(false);
@@ -231,6 +231,17 @@ function NewTableMgr(config, colums, table_callback) {
       table_mgr.rows.value = response.data;
     });
   };
+
+  table_mgr.resetAndLoad = function () {
+    table_mgr.config.current_page = 1;
+    //
+    if(typeof table_mgr.table_api_reset === "undefined"){
+    }else{
+      table_mgr.table_api_reset();
+    }
+    //
+    table_mgr.loadItems();
+  }
 
   table_mgr.toggleSearchWindow = function () {
     table_mgr.search_w_open.value = !table_mgr.search_w_open.value;

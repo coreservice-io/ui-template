@@ -9,6 +9,7 @@ import { PlusCircleIcon, PencilSquareIcon, MagnifyingGlassIcon, CalendarDaysIcon
 
 import { ref, toRaw } from "vue";
 
+
 import GoodTable from "@/components/core/table/Table.vue";
 import { NewTableMgr } from "@/components/core/table/table.js";
 
@@ -176,7 +177,7 @@ let table_callback = {
 //custom your table config
 let table_config = {
     mode: 'remote',
-    select_enable:false,
+    select_enable: false,
     // comment off to use default 
     // current_page: 1,
     // per_page: 5,
@@ -188,8 +189,11 @@ let { tableMgr, currentRow,
     update_w_open, update_w_loader_open,
     create_w_open, create_w_loader_open } = NewTableMgr(table_config, colums, table_callback);
 
+
+/////////////////////////////
+
 //inital loading
-tableMgr.loadItems();
+tableMgr.resetAndLoad();
 
 </script>
 
@@ -202,7 +206,7 @@ tableMgr.loadItems();
             </div>
 
             <div>
-                <good-table :table-mgr="tableMgr">
+                <good-table :table-mgr="tableMgr" ref="my_remote_table">
 
                     <template #selected-row-actions>
                         <button class="btn-primary sm">selection Action</button>
@@ -213,7 +217,7 @@ tableMgr.loadItems();
                             <PlusCircleIcon class="prefix-icon" />Create
                         </button>
 
-                        <button type="button" @click="tableMgr.loadItems" class="btn-secondary sm mr-3">
+                        <button type="button" @click="tableMgr.resetAndLoad" class="btn-secondary sm mr-3">
                             <ArrowPathIcon class="prefix-icon" />Refresh
                         </button>
                         <button type="button" @click="tableMgr.toggleSearchWindow" class="btn-secondary sm">
