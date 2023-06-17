@@ -1,4 +1,4 @@
-import { TagIcon, ListBulletIcon, CodeBracketIcon, ArrowsPointingOutIcon, ViewColumnsIcon, TableCellsIcon, ChartBarIcon, FlagIcon, AdjustmentsHorizontalIcon, ChevronDoubleRightIcon, PlayIcon, WindowIcon, ChatBubbleLeftIcon, PhotoIcon, InformationCircleIcon, StopIcon, ViewfinderCircleIcon, CommandLineIcon, FolderIcon, ClipboardDocumentListIcon } from "@heroicons/vue/24/outline";
+import { TagIcon,LinkIcon, ListBulletIcon, CodeBracketIcon, ArrowsPointingOutIcon, ViewColumnsIcon, TableCellsIcon, ChartBarIcon, FlagIcon, AdjustmentsHorizontalIcon, ChevronDoubleRightIcon, PlayIcon, WindowIcon, ChatBubbleLeftIcon, PhotoIcon, InformationCircleIcon, StopIcon, ViewfinderCircleIcon, CommandLineIcon, FolderIcon, ClipboardDocumentListIcon } from "@heroicons/vue/24/outline";
 
 let example = [
   {
@@ -7,13 +7,19 @@ let example = [
     open: true,
     children: [
       {
-        name: "Admin Visable",
+        name: "Admin Visible",
         icon: FlagIcon,
         open: false,
         href: "/example/adminv",
         auth: function (user) {
           return user.roles.includes("admin");
         },
+      },
+      {
+        name: "Open new page",
+        icon: LinkIcon,
+        open: false,
+        href: "http://google.com",
       },
       {
         name: "Tippy",
