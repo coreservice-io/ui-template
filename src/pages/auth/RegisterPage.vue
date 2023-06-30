@@ -130,7 +130,7 @@ async function submit_reg() {
             <LockClosedIcon class="icon" />
           </div>
           <input id="password" name="password" type="password" v-model="password"
-            v-tippy="{ placement: 'bottom', content: t('password_rule'), trigger: 'focus' }"
+            v-tippy="{ placement: 'bottom', content: t('password_rule'), trigger: 'focus', hideOnClick: false }"
             :class="[validate_password ? '' : 'err', 'relative pl-10 rounded-t']" autocomplete="current-password"
             :placeholder="t('password')" />
 
@@ -143,7 +143,9 @@ async function submit_reg() {
           <div class="prefix">
             <LockClosedIcon class="icon" />
           </div>
-          <input id="password_again" name="password_again" type="password" v-model="password_again"
+          <input id="password_again" name="password_again" type="password" 
+            v-model="password_again"
+            v-tippy="{ placement: 'bottom', content: t('password_again'), trigger: 'focus', hideOnClick: false }"
             autocomplete="current-password" :class="[validate_password_again ? '' : 'err', 'relative pl-10 rounded-b']"
             :placeholder="t('password_again')" />
           <div :class="validate_password_again && password_again != '' ? 'visible' : 'invisible'" class="suffix">
@@ -190,16 +192,17 @@ async function submit_reg() {
         </div>
       </div>
 
-    <div @click="submit_reg"
-      :class="[validate_register_ready ? '' : 'disabled', ' btn-primary w-full relative mt-3 mb-3']">
-      <UserPlusIcon class="icon dark absolute left-3" />{{ t("register") }}
+      <div @click="submit_reg"
+        :class="[validate_register_ready ? '' : 'disabled', ' btn-primary w-full relative mt-3 mb-3']">
+        <UserPlusIcon class="icon dark absolute left-3" />{{ t("register") }}
+      </div>
+
+      <Divider>{{ t("or") }}</Divider>
+
+      <router-link to="/signin" class="mt-3 btn-secondary light w-full relative">
+        <CursorArrowRaysIcon class="icon dark absolute left-3" aria-hidden="true" />
+        {{ t("sign_in_exist") }}
+      </router-link>
     </div>
-
-    <Divider>{{ t("or") }}</Divider>
-
-    <router-link to="/signin" class="mt-3 btn-secondary light w-full relative">
-      <CursorArrowRaysIcon class="icon dark absolute left-3" aria-hidden="true" />
-      {{ t("sign_in_exist") }}
-    </router-link>
-  </div>
-</TopbarNavLayout></template>
+  </TopbarNavLayout>
+</template>
