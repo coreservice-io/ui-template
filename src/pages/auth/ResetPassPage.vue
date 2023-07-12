@@ -129,7 +129,7 @@ async function submit_reset_pass() {
           </div>
           <input id="password" name="password" type="password" v-model="password"
             v-tippy="{ placement: 'bottom', content: t('password_rule'), trigger: 'focus', hideOnClick: false }"
-            :class="[validate_password ? '' : 'err', 'relative pl-10 rounded-t']" autocomplete="current-password"
+            :class="[validate_password ? '' : 'err-nofocus err', 'relative pl-10 rounded-t']" autocomplete="current-password"
             :placeholder="t('new_password')" />
 
           <div :class="validate_password && password != '' ? 'visible' : 'invisible'" class="suffix">
@@ -143,7 +143,7 @@ async function submit_reset_pass() {
           </div>
           <input id="password_again" name="password_again" type="password" v-model="password_again"
           v-tippy="{ placement: 'bottom', content: t('new_password_again'), trigger: 'focus', hideOnClick: false }"
-            autocomplete="current-password" :class="[validate_password_again ? '' : 'err', 'relative pl-10 rounded-b']"
+            autocomplete="current-password" :class="[validate_password_again ? '' : 'err-nofocus err', 'relative pl-10 rounded-b']"
             :placeholder="t('new_password_again')" />
           <div :class="validate_password_again && password_again != '' ? 'visible' : 'invisible'" class="suffix">
             <CheckIcon class="h-5 w-5 text-success" />

@@ -143,6 +143,11 @@ input.err {
     @apply focus:ring-red-500;
     @apply focus:border-red-500;
 }
+input.err-nofocus {
+    @apply ring-red-500;
+    @apply border-red-500;
+    @apply z-10;
+}
 //////////////////////////
 
 .btn-input-wrap {
